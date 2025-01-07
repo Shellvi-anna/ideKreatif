@@ -1,11 +1,11 @@
 <?php
-$host = "localhost";
-$user = "root";
+$host =localhost";
+$username = "root";
 $password = "";
-$nama_database = "bookstore";
+$database = "idekreatif";
 
-$db = mysqli_connect($server, $user, $password, $nama_database);
-if (!$db) {
-    die("Gagal terhubung dengan database: " . mysqli_connect_error());
+$conn = mysqli_connect($host, $username, $password, $database);
+if ($conn->connect_error) {
+die("Database gagal tekoneksi: " . $conn->connect_eror);
 }
 ?>
