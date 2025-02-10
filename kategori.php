@@ -70,12 +70,13 @@ while ($category = mysqli_fetch_assoc($exec)):
                         <p>Tindakan ini tidak bisa dibatalkan.</p>
                         <input type="hidden" name="catID" value="<?= $category['category_id']; ?>">
                     </div>
-            </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Batal</button>
+                <button type="button" class="btn btn-outline-secondary"
+                 data-bs-dismiss="modal">Batal</button>
                 <button type="submit" name="delete" class="btn btn-primary">Hapus</button>
-            </div>
+                  </div>
                 </form>
+            </div>
         </div>
     </div>
 </div>
